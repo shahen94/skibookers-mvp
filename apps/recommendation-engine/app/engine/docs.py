@@ -14,7 +14,7 @@ docs = [
             "title": "Arthur's Resort",
             "price_min": 120,
             "price_max": 250,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -29,7 +29,7 @@ docs = [
             "title": "Storm Peak",
             "price_min": 300,
             "price_max": 600,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -44,7 +44,7 @@ docs = [
             "title": "Aurora Ridge",
             "price_min": 180,
             "price_max": 350,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -59,7 +59,7 @@ docs = [
             "title": "Niseko Horizon",
             "price_min": 200,
             "price_max": 400,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -74,7 +74,7 @@ docs = [
             "title": "Snow Haven",
             "price_min": 80,
             "price_max": 150,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -89,7 +89,7 @@ docs = [
             "title": "Glacier Beat",
             "price_min": 210,
             "price_max": 320,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -104,9 +104,9 @@ docs = [
             "title": "Pioneer Basecamp",
             "price_min": 150,
             "price_max": 200,
-        }
+        },
     ),
-Document(
+    Document(
         page_content=(
             "Region: Scandinavia\n"
             "Budget: <$100\n"
@@ -119,7 +119,7 @@ Document(
             "title": "Frost Fjord",
             "price_min": 90,
             "price_max": 130,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -134,7 +134,7 @@ Document(
             "title": "Shinsetsu Peak",
             "price_min": 350,
             "price_max": 500,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -149,7 +149,7 @@ Document(
             "title": "Carpathian Ride",
             "price_min": 110,
             "price_max": 190,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -164,7 +164,7 @@ Document(
             "title": "Summit Crown",
             "price_min": 400,
             "price_max": 700,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -179,7 +179,7 @@ Document(
             "title": "Moose Grove",
             "price_min": 80,
             "price_max": 120,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -194,7 +194,7 @@ Document(
             "title": "Hakuba Nest",
             "price_min": 160,
             "price_max": 220,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -209,7 +209,7 @@ Document(
             "title": "Icewolf Summit",
             "price_min": 230,
             "price_max": 290,
-        }
+        },
     ),
     Document(
         page_content=(
@@ -224,6 +224,6 @@ Document(
             "title": "Nordic Blaze",
             "price_min": 310,
             "price_max": 450,
-        }
-    )
+        },
+    ),
 ]

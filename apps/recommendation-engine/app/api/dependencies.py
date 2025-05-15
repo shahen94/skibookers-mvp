@@ -4,6 +4,7 @@ from app.engine.graph import RecommendationEngine
 # Shared engine instance
 engine: RecommendationEngine | None = None
 
+
 def get_engine() -> RecommendationEngine:
     global engine
 

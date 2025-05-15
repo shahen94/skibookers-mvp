@@ -7,6 +7,7 @@ from langchain_community.vectorstores.chroma import Chroma
 from app.schemas.resort import Resort
 from .docs import docs
 
+
 class RecommendationEngine:
     embeddings: Embeddings
     store: VectorStore
