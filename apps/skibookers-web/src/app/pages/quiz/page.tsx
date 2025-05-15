@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useQuiz } from "./hooks/useQuiz";
+import { useQuiz, useRecommendations } from "./hooks/useQuiz";
+import { useNavigate } from "react-router-dom";
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -8,6 +9,9 @@ export default function QuizScreen() {
   const [submitted, setSubmitted] = useState(false);
 
   const { data, isPending, isError } = useQuiz();
+  const { mutate: submitRecommendations } = useRecommendations();
+  const navigate = useNavigate();
+
 
   const handleSelect = (questionId: string, option: string) => {
     setAnswers({ ...answers, [questionId]: option });
@@ -15,7 +19,16 @@ export default function QuizScreen() {
 
   const handleSubmit = () => {
     setSubmitted(true);
-    console.log("Submitted answers:", answers);
+    const quizArray = Object.keys(answers).map((key) => ({
+      id: key,
+      answer: answers[key]
+    }));
+
+    submitRecommendations({ quiz: quizArray }, {
+      onSuccess: () => {
+        navigate("/recommendations")
+      }
+    });
   };
 
   const totalQuestions = data?.length || 0;

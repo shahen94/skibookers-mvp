@@ -6,6 +6,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import App from './app/app';
 import { queryClient } from './app/lib/query-client';
 import { AuthProvider } from './app/context/auth';
+import { GlobalStateProvider } from './app/context/app-global';
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -20,7 +21,9 @@ root.render(
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <AuthProvider>
-          <App />
+          <GlobalStateProvider>
+            <App />
+          </GlobalStateProvider>
         </AuthProvider>
       </QueryClientProvider>
     </BrowserRouter>

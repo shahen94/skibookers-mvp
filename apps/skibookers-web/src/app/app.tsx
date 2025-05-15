@@ -4,6 +4,7 @@ import LoginScreen from './pages/auth/login/page';
 import SignupScreen from './pages/auth/signup/page';
 import { ProtectedRoute } from './components/route/private';
 import { PublicOnlyRoute } from './components/route/public';
+import { RecommendationsScreen } from './pages/recommendations/page';
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -15,6 +16,14 @@ export function App() {
           path="/"
           element={
             <Navigate to="/quiz" replace />
+          }
+        />
+        <Route
+          path="/recommendations"
+          element={
+            <ProtectedRoute>
+              <RecommendationsScreen />
+            </ProtectedRoute>
           }
         />
         <Route
